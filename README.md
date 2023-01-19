@@ -51,10 +51,10 @@ Among the many parameters of primary importance are:
 1. the globalTag [link](https://github.com/gem-dpg-pfa/MuonDPGNTuples/blob/21a2aa3921046fedcb1ed6943beb97960e471f5e/test/muDpgNtuples_cfg.py#L12) depends on the CMS configuration at the time of the run
 2. the input file [link](https://github.com/gem-dpg-pfa/MuonDPGNTuples/blob/21a2aa3921046fedcb1ed6943beb97960e471f5e/test/muDpgNtuples_cfg.py#L93) which specifies what files are you running on. You might need a working voms authentication to access the input files which are located in sites other than CERN.
 You don't need to edit the config file, simply run
-`
+```
 cmsenv
 cmsRun  muDpgNtuples_cfg.py
-`
+```
 to start the ntuplization. 
 
 ## Run with CRAB (CMS computing centers)
@@ -63,16 +63,16 @@ Therefore writing rights are needed for the GEM DPG EOS (EOS T2 facility)
 Subscribe to the e-group ==cms-eos-dpg-gem== to have writing rights.
 You must have a working voms authentication to access the input files which are located in sites other than CERN.
 
-`
+```
 cd CRAB_SUB/
 cmsenv
 source "/cvmfs/cms.cern.ch/common/crab-setup.sh"
 python3  P5Data_crabConfig.py  --RunList [space separated list of runs to be ntuplized]--Dataset [chosen dataset among the available options
-`
+```
 This command submits the jobs on CRAB. You can check the status of your jobs by running
-`
+```
 python3 CheckStatus.py
-`
+```
 
 ## 2. Analysis of the ntuples
 This code is meant to analyze the ntuples and produce efficiency info per VFAT.
