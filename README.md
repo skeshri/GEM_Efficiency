@@ -25,8 +25,9 @@ CMSSW code meant to skim the data and perform the propagation of muon tracks on 
 [github repo](https://github.com/gem-dpg-pfa/MuonDPGNTuples/tree/GEMOHStatusCMSSW_12_6_X)
 
 ## Download and Compile
-on your lxplus 
-`
+on your lxplus
+
+```
 cmsrel CMSSW_12_5_1
 cd CMSSW_12_5_1/src/ 
 cmsenv
@@ -34,7 +35,7 @@ git cms-merge-topic yeckang:OHStatus_12_5_X
 git clone --branch GEMOHStatusCMSSW_12_6_X git@github.com:gem-dpg-pfa/MuonDPGNTuples.git MuDPGAnalysis/MuonDPGNtuples
 cd MuDPGAnalysis/MuonDPGNtuples/
 scram b -j 5
-`
+```
 ## Run the ntuplization
 The code can be executed 
 
