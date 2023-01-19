@@ -44,8 +44,8 @@ locally in your lxplus area
 2. I recommend running it locally first.
 
 ### Run locally
-The output file will be stored under the ==test/folder==. 
-The input parameters are provided in the file ==test/muDpgNtuples_cfg.py==
+The output file will be stored under the `test/folder`. 
+The input parameters are provided in the file `test/muDpgNtuples_cfg.py`
 Among the many parameters of primary importance are:
 
 1. the globalTag [link](https://github.com/gem-dpg-pfa/MuonDPGNTuples/blob/21a2aa3921046fedcb1ed6943beb97960e471f5e/test/muDpgNtuples_cfg.py#L12) depends on the CMS configuration at the time of the run
@@ -58,9 +58,9 @@ cmsRun  muDpgNtuples_cfg.py
 to start the ntuplization. 
 
 ## Run with CRAB (CMS computing centers)
-The output will be stored under ==/eos/cms/store/group/dpg_gem/comm_gem/P5_Commissioning/2022/GEMCommonNtuples==
+The output will be stored under `/eos/cms/store/group/dpg_gem/comm_gem/P5_Commissioning/2022/GEMCommonNtuples`
 Therefore writing rights are needed for the GEM DPG EOS (EOS T2 facility)
-Subscribe to the e-group ==cms-eos-dpg-gem== to have writing rights.
+Subscribe to the e-group `cms-eos-dpg-gem` to have writing rights.
 You must have a working voms authentication to access the input files which are located in sites other than CERN.
 
 ```
@@ -78,17 +78,17 @@ python3 CheckStatus.py
 This code is meant to analyze the ntuples and produce efficiency info per VFAT.
 It actually produces many plots of many quantities. 
 
-This code can largely benefit from ==columnar analysis== which is what I am working on at the moment. 
+This code can largely benefit from `columnar analysis` which is what I am working on at the moment. 
 The code currently on github processes the events one by one in a for loop. It typically takes ~hours to process a run.
-With the ==columnar analysis== it will be 1-2 order of magnitude faster. 
+With the `columnar analysis` it will be 1-2 order of magnitude faster. 
 
 [github repo](https://github.com/fraivone/PFA_Analyzer/tree/main)
 
 The [README](https://github.com/fraivone/PFA_Analyzer/tree/main#readme) details the usage and functioning of the code.
 I recommend reading it first. You should be able to try it out following the instruction in the there.
-I recommend to checkout the branch ==main==.
+I recommend to checkout the branch `main`.
 
-My latest working branch is ==feature_python3==:
+My latest working branch is `feature_python3`:
 
 - based on python3 (perviously python2.7)
 - includes changes in the the input parameters parsing
