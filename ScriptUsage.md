@@ -11,10 +11,10 @@ usage: PFA_Analyzer.py [-h] [-pc PHI_CUT] [-rdpc RDPHI_CUT]
                        [--minME4 MINME4] [-evts NEVENTS]
 ```
 Scripts that: 
-	- Reads the GEMMuonNtuple
-	- Plot Sanity Checks
-	- Plot Residuals (takes the cut as parameter)
-	- Plot efficiency
+- Reads the GEMMuonNtuple
+- Plot Sanity Checks
+- Plot Residuals (takes the cut as parameter)
+- Plot efficiency
 
 Currently allows the hits matching on glb_phi and glb_rdphi
 
