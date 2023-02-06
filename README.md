@@ -100,3 +100,30 @@ The core of the code stays the same, but the instructions for this version have 
 Additional code that helps you select only the **lumisections** for which **GE11 HV == your desired value**
 
 This is a stub: I intend to write this section, but haven’t yet.
+
+## Next steps
+
+- Have the "FetchOMS" script work
+  1. Produce keys and cert
+  2. Link the key and cert location on the
+  3. Start fetching info from run 357899 to run 363000
+  4. Filter based on duration (>1h) and date (up to 27 Nov)
+- Use the latest version of the analyzer
+  1. Install poetry [link](https://python-poetry.org/docs/)
+  2. git clone --branch feature_python3 https://github.com/fraivone/PFA_Analyzer.git
+
+- TO DO Francesco 
+
+  1. Provide the chamber masking script
+  2. Check with Simone the status of the code after HV Extension
+
+### On the VFAT Mask
+Two cases:
+
+1. OHStatus available in the data:
+This is the optimal case for masking. The information on VFAT Errors, Warnings, ZeroSuppressed, VFAT Masked at the FW/DAQ level are stored per event.
+I fetch the information per VFAT per event and store them into the ntuples. 
+At the analysis level, for each event, I skip the propagated hits which go on a "BAD" VFAT
+
+2. OHStatus NOT available in the data:
+I rely on the DQM Summary plot. Chambers that appear "not green" in the DQM Summary plot are masked entirely for the whole run
