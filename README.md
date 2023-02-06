@@ -107,8 +107,10 @@ This is a stub: I intend to write this section, but haven’t yet.
   1. Produce keys and cert
   2. Link the key and cert location on the
   3. run following 
-     ``` cd /venv/bin 
-     source activate ```
+     ``` 
+     cd /venv/bin 
+     source activate 
+     ```
   4. Start fetching info from run 357899 to run 363000
   5. Filter based on duration (>1h) and date (up to 27 Nov)
 - Use the latest version of the analyzer
