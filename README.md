@@ -109,7 +109,8 @@ This is a stub: I intend to write this section, but haven’t yet.
   3. run following 
      ``` 
      cd /venv/bin 
-     source activate 
+     source activate
+     git clone -b feature_python3 git@github.com:fraivone/PFA_Analyzer.git
      ```
   4. Start fetching info from run 357899 to run 363000
   5. Filter based on duration (>1h) and date (up to 27 Nov)
