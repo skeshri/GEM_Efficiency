@@ -113,6 +113,7 @@ This is a stub: I intend to write this section, but haven’t yet.
      ```
   4. Start fetching info from run 357899 to run 363000
   5. Filter based on duration (>1h) and date (up to 27 Nov)
+  Useful link runregistry: https://github.com/cms-DQM/runregistry/tree/master/runregistry_api_client
 - Use the latest version of the analyzer
   1. Install poetry [link](https://python-poetry.org/docs/)
     a. Before installing Poetry enable the python3 version higher than python3.7. Instructions are at [here](https://cern.service-now.com/service-portal?id=kb_article&sys_id=3554cdc50a0a8c0800e89d3ccb5ed4a7) for the lxplus
