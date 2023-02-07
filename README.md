@@ -116,7 +116,12 @@ This is a stub: I intend to write this section, but haven’t yet.
 - Use the latest version of the analyzer
   1. Install poetry [link](https://python-poetry.org/docs/)
     a. Before installing Poetry enable the python3 version higher than python3.7. Instructions are at [here](https://cern.service-now.com/service-portal?id=kb_article&sys_id=3554cdc50a0a8c0800e89d3ccb5ed4a7) for the lxplus
-  3. git clone --branch feature_python3 https://github.com/fraivone/PFA_Analyzer.git
+  2. git clone --branch feature_python3 https://github.com/fraivone/PFA_Analyzer.git
+  3. Set up the poetry environment
+  ```
+  poetry shell
+  poetry install
+  ```
 
 - TO DO Francesco 
 
