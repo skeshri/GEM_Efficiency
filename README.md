@@ -35,6 +35,9 @@ git cms-merge-topic yeckang:OHStatus_12_5_X
 git clone --branch GEMOHStatusCMSSW_12_6_X git@github.com:gem-dpg-pfa/MuonDPGNTuples.git MuDPGAnalysis/MuonDPGNtuples
 cd MuDPGAnalysis/MuonDPGNtuples/
 scram b -j 5
+
+cp /afs/cern.ch/user/f/fivone/public/forSumit/classes_def.xml  /afs/cern.ch/work/s/skeshri/GEM_efficiency/Ntuple/CMSSW_12_6_4/src/DataFormats/GEMDigi/src/
+cp /afs/cern.ch/user/f/fivone/public/forSumit/GEMAMCStatus.h /afs/cern.ch/work/s/skeshri/GEM_efficiency/Ntuple/CMSSW_12_6_4/src/DataFormats/GEMDigi/interface/
 ```
 ## Run the ntuplization
 The code can be executed 
