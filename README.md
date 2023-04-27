@@ -142,3 +142,21 @@ At the analysis level, for each event, I skip the propagated hits which go on a 
 
 2. OHStatus NOT available in the data:
 I rely on the DQM Summary plot. Chambers that appear "not green" in the DQM Summary plot are masked entirely for the whole run
+
+
+### Ntuple for 2023 collision data
+Instructions:
+```
+cmsrel CMSSW_13_0_3
+cd CMSSW_13_0_3/src/
+cp -r /afs/cern.ch/work/s/skeshri/public/forShalini/Ntuple_2023/* .
+scram b -j 4
+cd /MuDPGAnalysis/MuonDPGNtuples/test
+voms-proxy-init --voms cms
+cmsRun muDpgNtuples_cfg.py #for running locally
+
+CRAB_JOBS:
+cd /MuDPGAnalysis/MuonDPGNtuples/CRAB_SUB/
+source /cvmfs/cms.cern.ch/crab3/crab.sh
+python3 P5Data_crabConfig.py -rl 366451 -d ZMu
+```
